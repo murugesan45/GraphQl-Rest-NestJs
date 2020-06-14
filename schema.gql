@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Author {
+  _id: String!
+  name: String!
+  age: Int!
+}
+
+type Books {
+  _id: String
+  name: String!
+  genre: String!
+  authorId: String!
+  author: Author!
+}
+
+type Query {
+  allAuthors: [Author!]!
+  allBooks: [Books!]!
+}
